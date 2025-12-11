@@ -1,0 +1,5 @@
+# Basic CrewAI CLI configuration used by `crewai run`
+project:
+  name: ai_research_crew
+  entrypoint: ai_research_crew.main:run
+  description: "Mini-Project: AI Research & Report Crew"
