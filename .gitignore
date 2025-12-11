@@ -1,28 +1,32 @@
-# Byte-compiled / optimized / DLL files
+# Python bytecode and caches
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+*.pyd
 
 # Virtual environments
 .venv/
-.env
+venv/
+env/
 
-# CrewAI artifacts
-trained_agents_data.pkl
-training_data.pkl
+# Jupyter
+.ipynb_checkpoints/
 
-# Python packaging
-.build/
-.dist/
-*.egg-info/
-
-# VSCode / IDE
-.vscode/
-.idea/
-
-# OS files
+# OS-specific
 .DS_Store
 Thumbs.db
 
-# Reports cache
-reports/*.tmp
+# Data / outputs (keep raw data tracked, ignore derived artifacts)
+*.tmp
+*.log
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
