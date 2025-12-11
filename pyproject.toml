@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ai-research-crew"
+version = "0.1.0"
+description = "Mini CrewAI project: AI research & markdown report pipeline"
+authors = ["Your Name <you@example.com>"]
+packages = [
+  { include = "ai_research_crew", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+crewai = "^0.30.11"
+# Optionally include tools extras if not installed globally
+# crewai-tools = "*"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
