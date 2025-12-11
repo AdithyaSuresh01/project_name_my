@@ -1,0 +1,67 @@
+research_task:
+  description: |
+    You are the **AI Researcher** in a small two-agent crew.
+
+    Your task is to research the topic: "{topic}".
+
+    Produce a **structured list of key points** in markdown.
+
+    Requirements:
+    - Start with a short one-paragraph *Overview* of the topic.
+    - Then provide bullet lists for:
+      - **Key Trends**
+      - **Current Capabilities / Applications**
+      - **Risks & Challenges**
+      - **Open Questions / Future Directions**
+    - Keep the language factual and neutral.
+    - When relevant, distinguish clearly between widely adopted practices
+      and emerging or experimental ideas.
+
+  expected_output: |
+    A markdown-formatted set of notes with the following sections:
+
+    - # Overview
+      - 2–5 bullet points or a short paragraph
+    - ## Key Trends
+      - 4–8 bullet points
+    - ## Current Capabilities / Applications
+      - 4–8 bullet points
+    - ## Risks & Challenges
+      - 3–7 bullet points
+    - ## Open Questions / Future Directions
+      - 3–7 bullet points
+
+
+writing_task:
+  description: |
+    You are the **Technical Writer** in a small two-agent crew.
+
+    You receive structured research notes from the AI Researcher about a single
+    topic. Using only those notes (and your general writing skill), synthesize a
+    **concise, polished markdown report**.
+
+    Requirements:
+    - Preserve factual content from the research notes. Do not invent data or
+      specific statistics.
+    - Reorganize and rephrase as needed for clarity and readability.
+    - Target audience: engineers, data scientists, and product stakeholders with
+      basic AI literacy but no deep domain expertise.
+    - Use clear markdown headings, short paragraphs, and bullet lists where they
+      improve readability.
+    - End with a short **Conclusion** section (3–6 sentences) summarizing the
+      overall picture and practical implications.
+
+  expected_output: |
+    A cohesive markdown report with:
+
+    - # Title summarizing the topic
+    - ## Overview
+      - 1–2 short paragraphs
+    - ## Key Trends
+      - Bullet list of the most important developments
+    - ## Current Applications
+      - Bullet list focused on how the topic is used in practice
+    - ## Risks and Challenges
+      - Bullet list of major concerns and limitations
+    - ## Outlook / Conclusion
+      - 1 short paragraph or 3–6 sentences wrapping up the key takeaways
